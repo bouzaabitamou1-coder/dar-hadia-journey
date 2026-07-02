@@ -1,24 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import Loader from "@/components/site/Loader";
+import SmoothScroll from "@/components/site/SmoothScroll";
+import LanternCursor from "@/components/site/LanternCursor";
+import SiteNav from "@/components/site/SiteNav";
+import Hero from "@/components/site/Hero";
+import StoryOfHadia from "@/components/site/StoryOfHadia";
+import RiadExperience from "@/components/site/RiadExperience";
+import LuxurySuites from "@/components/site/LuxurySuites";
+import Gastronomy from "@/components/site/Gastronomy";
+import Rooftop from "@/components/site/Rooftop";
+import CookingClasses from "@/components/site/CookingClasses";
+import WellnessHammam from "@/components/site/WellnessHammam";
+import Testimonials from "@/components/site/Testimonials";
+import InteractiveGallery from "@/components/site/InteractiveGallery";
+import ExploreFez from "@/components/site/ExploreFez";
+import ReservationCTA from "@/components/site/ReservationCTA";
+import ContactFooter from "@/components/site/ContactFooter";
+import WhatsAppFloat from "@/components/site/WhatsAppFloat";
+import EnquiryDrawer from "@/components/site/EnquiryDrawer";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: DarHadiaHome,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function DarHadiaHome() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative bg-ebony text-cream">
+      <Loader />
+      <SmoothScroll />
+      <LanternCursor />
+      <SiteNav />
+
+      <main>
+        <Hero />
+        <StoryOfHadia />
+        <RiadExperience />
+        <LuxurySuites />
+        <Gastronomy />
+        <Rooftop />
+        <CookingClasses />
+        <WellnessHammam />
+        <Testimonials />
+        <InteractiveGallery />
+        <ExploreFez />
+        <ReservationCTA />
+      </main>
+
+      <ContactFooter />
+      <WhatsAppFloat />
+      <EnquiryDrawer />
     </div>
   );
 }
