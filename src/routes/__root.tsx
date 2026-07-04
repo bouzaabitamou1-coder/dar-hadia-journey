@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Dar Hadia" },
       { name: "theme-color", content: "#121212" },
-      { property: "og:title", content: "Dar Hadia — A Luxury Riad in Fes" },
+      { property: "og:title", content: "Dar Hadia — A Luxury Riad in the Heart of the Fes Medina" },
       {
         property: "og:description",
         content:
@@ -93,11 +93,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dar Hadia — A Luxury Riad in Fes" },
+      { name: "twitter:title", content: "Dar Hadia — A Luxury Riad in the Heart of the Fes Medina" },
       {
         name: "twitter:description",
         content: "Arriving home in the heart of the Medina.",
       },
+      { name: "description", content: "Dar Hadia is an intimate luxury riad in Fes El Bali. Restored suites, a rooftop over the medina, a marble hammam, and hospitality guided by Hadia herself." },
+      { property: "og:description", content: "Dar Hadia is an intimate luxury riad in Fes El Bali. Restored suites, a rooftop over the medina, a marble hammam, and hospitality guided by Hadia herself." },
+      { name: "twitter:description", content: "Dar Hadia is an intimate luxury riad in Fes El Bali. Restored suites, a rooftop over the medina, a marble hammam, and hospitality guided by Hadia herself." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/04014314-9da4-4767-b319-b844c057e651/id-preview-ee026f15--f8b7537e-a072-4cec-99b0-b205d7332bda.lovable.app-1783130668452.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/04014314-9da4-4767-b319-b844c057e651/id-preview-ee026f15--f8b7537e-a072-4cec-99b0-b205d7332bda.lovable.app-1783130668452.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
