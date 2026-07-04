@@ -5,24 +5,24 @@ import { DH } from "@/assets/dh";
 const rooms = [
   {
     id: "grand-salon",
-    name: "The Grand Salon",
-    tag: "Zellige-clad reception · Fassi craftsmanship",
+    name: "The Grand Hall",
+    tag: "Zellige mosaics · Carved cedar",
     from: "Guest use",
-    img: DH.zelligeDetail,
+    img: DH.riadArch,
   },
   {
     id: "riad-salon",
     name: "Salon Marocain",
     tag: "Silk banquettes · Lantern light",
     from: "Guest use",
-    img: DH.salonNight,
+    img: DH.salonLit,
   },
   {
     id: "atrium",
     name: "The Atrium",
     tag: "Open to the sky · Traditional fountain",
     from: "Guest use",
-    img: DH.riadHall,
+    img: DH.zelligeDetail,
   },
 ];
 

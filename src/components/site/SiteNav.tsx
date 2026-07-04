@@ -3,10 +3,10 @@ import { openEnquiry } from "@/lib/enquiry";
 
 const links = [
   { href: "#story", label: "The Riad" },
-  { href: "#suites", label: "Suites" },
+  { href: "#suites", label: "The House" },
   { href: "#gastronomy", label: "Gastronomy" },
-  { href: "#wellness", label: "Wellness" },
   { href: "#gallery", label: "Gallery" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function SiteNav() {
