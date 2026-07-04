@@ -73,13 +73,6 @@ export default function LuxurySuites() {
                     {r.tag}
                   </p>
                 </div>
-                <span className="hidden text-right text-xs text-cream/70 md:block">
-                  <span className="block text-[9px] uppercase tracking-[0.3em] text-cream/40">
-                    From
-                  </span>
-                  {r.from}
-                  <span className="text-cream/40"> / night</span>
-                </span>
               </div>
             </button>
           </Reveal>
