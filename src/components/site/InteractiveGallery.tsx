@@ -1,24 +1,21 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Reveal from "./Reveal";
-import zellige from "@/assets/gallery-zellige.jpg";
-import door from "@/assets/gallery-door.jpg";
-import tea from "@/assets/gallery-tea.jpg";
-import shadow from "@/assets/gallery-shadow.jpg";
-import courtyard from "@/assets/hero-courtyard.jpg";
-import rooftop from "@/assets/rooftop-fes.jpg";
-import spices from "@/assets/cooking-spices.jpg";
-import hammam from "@/assets/hammam.jpg";
+import { DH } from "@/assets/dh";
 
 const shots = [
-  { src: courtyard, alt: "Candlelit courtyard", span: "row-span-2" },
-  { src: zellige, alt: "Zellige tile detail", span: "" },
-  { src: door, alt: "Carved cedar door", span: "" },
-  { src: rooftop, alt: "Rooftop over Fes", span: "col-span-2" },
-  { src: tea, alt: "Mint tea being poured", span: "" },
-  { src: shadow, alt: "Shadow on tadelakt wall", span: "" },
-  { src: spices, alt: "Moroccan spices", span: "" },
-  { src: hammam, alt: "Marble hammam", span: "" },
+  { src: DH.hero, alt: "Rooftop under the Fes twilight", span: "col-span-2 row-span-2" },
+  { src: DH.zelligeDetail, alt: "Zellige-clad reception hall", span: "" },
+  { src: DH.hostTea, alt: "Mint tea poured in the salon", span: "" },
+  { src: DH.tagineSteam, alt: "Steaming tagine at the table", span: "" },
+  { src: DH.rooftopDay, alt: "Rooftop terrace over the medina", span: "" },
+  { src: DH.salonNight, alt: "Salon Marocain by lantern light", span: "col-span-2" },
+  { src: DH.dinnerCandlelit, alt: "Candlelit dinner on the rooftop", span: "" },
+  { src: DH.soukTomatoes, alt: "Fes souk — tomatoes and onions", span: "" },
+  { src: DH.riadHall, alt: "The grand hall of the riad", span: "" },
+  { src: DH.rooftopTea, alt: "Tea with a view of Fes", span: "" },
+  { src: DH.cookingTagines, alt: "Tagines on the fire", span: "" },
+  { src: DH.rooftopDusk2, alt: "Rooftop tent at blue hour", span: "col-span-2" },
 ];
 
 export default function InteractiveGallery() {
@@ -52,22 +49,20 @@ export default function InteractiveGallery() {
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
+        <div className="grid auto-rows-[180px] grid-cols-2 gap-2 md:auto-rows-[220px] md:grid-cols-4 md:gap-3">
           {shots.map((s, i) => (
-            <Reveal key={s.src} delay={i * 0.03}>
+            <Reveal key={s.src} delay={i * 0.03} className={s.span}>
               <button
                 onClick={() => setOpen(i)}
-                className={`group relative block w-full overflow-hidden ${s.span}`}
+                className="group relative block h-full w-full overflow-hidden"
               >
-                <div className="aspect-square w-full overflow-hidden">
-                  <img
-                    src={s.src}
-                    alt={s.alt}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-110"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-ebony/0 transition-colors group-hover:bg-ebony/20" />
+                <img
+                  src={s.src}
+                  alt={s.alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-ebony/0 transition-colors group-hover:bg-ebony/25" />
               </button>
             </Reveal>
           ))}

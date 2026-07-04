@@ -11,7 +11,7 @@ import LuxurySuites from "@/components/site/LuxurySuites";
 import Gastronomy from "@/components/site/Gastronomy";
 import Rooftop from "@/components/site/Rooftop";
 import CookingClasses from "@/components/site/CookingClasses";
-import WellnessHammam from "@/components/site/WellnessHammam";
+import Awards from "@/components/site/Awards";
 import Testimonials from "@/components/site/Testimonials";
 import InteractiveGallery from "@/components/site/InteractiveGallery";
 import ExploreFez from "@/components/site/ExploreFez";
@@ -40,7 +40,7 @@ function DarHadiaHome() {
         <Gastronomy />
         <Rooftop />
         <CookingClasses />
-        <WellnessHammam />
+        <Awards />
         <Testimonials />
         <InteractiveGallery />
         <ExploreFez />

@@ -20,7 +20,7 @@ const EMPTY: Form = {
   checkIn: "",
   checkOut: "",
   guests: 2,
-  roomId: "amber",
+  roomId: "stay",
   message: "",
 };
 
@@ -180,9 +180,10 @@ export default function EnquiryDrawer() {
                       onChange={(e) => update("roomId", e.target.value)}
                       className="drawer-input"
                     >
-                      <option value="amber" className="bg-ebony">Suite Amber</option>
-                      <option value="cobalt" className="bg-ebony">Royal Cobalt</option>
-                      <option value="cedar" className="bg-ebony">Cedar Retreat</option>
+                      <option value="stay" className="bg-ebony">A stay at the Riad</option>
+                      <option value="dinner" className="bg-ebony">Rooftop dinner</option>
+                      <option value="cooking" className="bg-ebony">Cooking class</option>
+                      <option value="private" className="bg-ebony">Private event</option>
                       <option value="any" className="bg-ebony">Any / advise me</option>
                     </select>
                   </Row>

@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
-import spices from "@/assets/cooking-spices.jpg";
+import { DH } from "@/assets/dh";
+const spices = DH.cookingTagines;
 
 const steps = [
   "Morning walk through the Fes souk with Chef Karim",

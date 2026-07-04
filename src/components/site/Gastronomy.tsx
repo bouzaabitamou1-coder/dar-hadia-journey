@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
-import tagine from "@/assets/gastronomy-tagine.jpg";
+import { DH } from "@/assets/dh";
+const tagine = DH.tagineSignature;
 
 const items = [
   {

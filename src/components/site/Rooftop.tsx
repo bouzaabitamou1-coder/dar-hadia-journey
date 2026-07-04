@@ -1,6 +1,7 @@
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import rooftop from "@/assets/rooftop-fes.jpg";
+import { DH } from "@/assets/dh";
+const rooftop = DH.rooftopDusk3;
 
 export default function Rooftop() {
   const ref = useRef<HTMLElement>(null);

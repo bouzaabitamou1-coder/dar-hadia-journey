@@ -6,7 +6,7 @@ export default function ReservationCTA() {
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [guests, setGuests] = useState(2);
-  const [room, setRoom] = useState("amber");
+  const [room, setRoom] = useState("stay");
 
   return (
     <section id="reserve" className="relative overflow-hidden py-32 md:py-44">
@@ -68,9 +68,10 @@ export default function ReservationCTA() {
                   onChange={(e) => setRoom(e.target.value)}
                   className="input-line"
                 >
-                  <option value="amber" className="bg-ebony">Suite Amber</option>
-                  <option value="cobalt" className="bg-ebony">Royal Cobalt</option>
-                  <option value="cedar" className="bg-ebony">Cedar Retreat</option>
+                  <option value="stay" className="bg-ebony">A stay at the Riad</option>
+                  <option value="dinner" className="bg-ebony">Rooftop dinner</option>
+                  <option value="cooking" className="bg-ebony">Cooking class</option>
+                  <option value="private" className="bg-ebony">Private event</option>
                   <option value="any" className="bg-ebony">Any / advise me</option>
                 </select>
               </Field>

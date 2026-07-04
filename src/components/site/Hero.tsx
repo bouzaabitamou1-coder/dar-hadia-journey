@@ -1,6 +1,7 @@
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import heroImg from "@/assets/hero-courtyard.jpg";
+import { DH } from "@/assets/dh";
+const heroImg = DH.hero;
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
