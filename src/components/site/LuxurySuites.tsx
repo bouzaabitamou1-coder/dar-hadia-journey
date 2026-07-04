@@ -1,30 +1,28 @@
 import Reveal from "./Reveal";
 import { openEnquiry } from "@/lib/enquiry";
-import amber from "@/assets/room-amber.jpg";
-import cobalt from "@/assets/room-cobalt.jpg";
-import cedar from "@/assets/room-cedar.jpg";
+import { DH } from "@/assets/dh";
 
 const rooms = [
   {
-    id: "amber",
-    name: "Suite Amber",
-    tag: "Master Suite · Terrace Access",
-    from: "€ 320",
-    img: amber,
+    id: "grand-salon",
+    name: "The Grand Salon",
+    tag: "Zellige-clad reception · Fassi craftsmanship",
+    from: "Guest use",
+    img: DH.zelligeDetail,
   },
   {
-    id: "cobalt",
-    name: "Royal Cobalt",
-    tag: "Deluxe Room · Courtyard View",
-    from: "€ 260",
-    img: cobalt,
+    id: "riad-salon",
+    name: "Salon Marocain",
+    tag: "Silk banquettes · Lantern light",
+    from: "Guest use",
+    img: DH.salonNight,
   },
   {
-    id: "cedar",
-    name: "Cedar Retreat",
-    tag: "Junior Suite · Private Nook",
-    from: "€ 210",
-    img: cedar,
+    id: "atrium",
+    name: "The Atrium",
+    tag: "Open to the sky · Traditional fountain",
+    from: "Guest use",
+    img: DH.riadHall,
   },
 ];
 
@@ -34,10 +32,10 @@ export default function LuxurySuites() {
       <div className="mb-16 flex flex-col justify-between gap-6 px-6 md:mb-20 md:flex-row md:items-end md:px-10">
         <Reveal>
           <span className="text-[10px] uppercase tracking-[0.4em] text-gold">
-            Accommodations
+            The House
           </span>
           <h2 className="mt-4 font-serif text-4xl leading-tight md:text-6xl">
-            Sanctuaries of Rest
+            Salons of Dar Hadia
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
