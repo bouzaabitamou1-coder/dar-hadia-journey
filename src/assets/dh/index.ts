@@ -62,4 +62,5 @@ export const DH = {
   hadiaPortrait: hadiaPortrait.url,
   hadiaSalon: hadiaSalon.url,
   hadiaFestival: hadiaFestival.url,
+  hadiaCourtyard: hadiaCourtyard.url,
 };
