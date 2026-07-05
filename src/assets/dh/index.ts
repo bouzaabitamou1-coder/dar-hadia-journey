@@ -29,6 +29,7 @@ import tcBadge2026 from "./tc-badge-2026.svg.asset.json";
 import hadiaPortrait from "./hadia-portrait.jpg.asset.json";
 import hadiaSalon from "./hadia-salon.jpg.asset.json";
 import hadiaFestival from "./hadia-festival.jpg.asset.json";
+import hadiaCourtyard from "./hadia-courtyard.jpg.asset.json";
 
 export const DH = {
   hero: hero.url,
@@ -61,4 +62,5 @@ export const DH = {
   hadiaPortrait: hadiaPortrait.url,
   hadiaSalon: hadiaSalon.url,
   hadiaFestival: hadiaFestival.url,
+  hadiaCourtyard: hadiaCourtyard.url,
 };

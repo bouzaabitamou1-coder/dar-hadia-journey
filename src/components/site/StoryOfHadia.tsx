@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import { DH } from "@/assets/dh";
-const hadia = DH.hadiaPortrait;
+const hadia = DH.hadiaCourtyard;
 
 export default function StoryOfHadia() {
   return (
