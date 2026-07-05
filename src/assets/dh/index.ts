@@ -58,4 +58,7 @@ export const DH = {
   soukPickles: soukPickles.url,
   tcBadge2025: tcBadge2025.url,
   tcBadge2026: tcBadge2026.url,
+  hadiaPortrait: hadiaPortrait.url,
+  hadiaSalon: hadiaSalon.url,
+  hadiaFestival: hadiaFestival.url,
 };
