@@ -26,6 +26,9 @@ import soukTomatoes from "./souk-tomatoes.jpg.asset.json";
 import soukPickles from "./souk-pickles.jpg.asset.json";
 import tcBadge2025 from "./tc-badge-2025.svg.asset.json";
 import tcBadge2026 from "./tc-badge-2026.svg.asset.json";
+import hadiaPortrait from "./hadia-portrait.jpg.asset.json";
+import hadiaSalon from "./hadia-salon.jpg.asset.json";
+import hadiaFestival from "./hadia-festival.jpg.asset.json";
 
 export const DH = {
   hero: hero.url,
@@ -55,4 +58,7 @@ export const DH = {
   soukPickles: soukPickles.url,
   tcBadge2025: tcBadge2025.url,
   tcBadge2026: tcBadge2026.url,
+  hadiaPortrait: hadiaPortrait.url,
+  hadiaSalon: hadiaSalon.url,
+  hadiaFestival: hadiaFestival.url,
 };
